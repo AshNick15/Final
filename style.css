@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(27, 24, 102);
+}
+
+h1 {
+    color: indianred;
+}
+
+.image-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-links a {
+    margin: 0 15px;
+}
+
+.image-links img {
+    border: 2px solid #555;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-links img:hover {
+    transform: scale(1.1);
+}
