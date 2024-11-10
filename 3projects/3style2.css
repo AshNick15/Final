@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(52, 206, 211);
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#info div {
+    padding: 3rem;
+    background-color: rgb(150, 111, 181);
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+}
