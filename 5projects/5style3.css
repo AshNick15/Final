@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f4f4f4;
+    background-color: #c130ff;
 }
 
 h1 {
@@ -12,21 +12,21 @@ h1 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #b15faf;
     border-radius: 4px;
 }
 
 button {
     padding: 10px 15px;
-    background-color: #28a745;
-    color: white;
+    background-color: #00d0ff;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #005f76;
 }
 
 ul {
@@ -35,7 +35,7 @@ ul {
 }
 
 li {
-    background-color: white;
+    background-color: rgb(242, 224, 92);
     margin: 5px 0;
     padding: 10px;
     border: 1px solid #ddd;
