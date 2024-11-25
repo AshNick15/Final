@@ -60,5 +60,5 @@ function resetBoard() {
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
 document.getElementById("homeButton").addEventListener("click", function () {
-  window.location.href = "index.html"; // Use a relative URL to navigate to the desired webpage
+  window.location.href = "index.html";
 });
