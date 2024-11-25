@@ -15,3 +15,7 @@ openEmoji.addEventListener("click", () => {
     openEmoji.classList.remove("active");
   }
 });
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
