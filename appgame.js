@@ -35,13 +35,13 @@ const game = () => {
         const computerChoice = computerOptions[computerNumber];
 
         setTimeout(() => {
-          //compare hands
+          //Here is where we call compare hands
           compareHands(this.textContent, computerChoice);
-          //update images
-          playerHand.src = `./images/${this.textContent}.png`;
-          computerHand.src = `./images/${computerChoice}.png`;
+          //Update Images
+          playerHand.src = `./assets/${this.textContent}.png`;
+          computerHand.src = `./assets/${computerChoice}.png`;
         }, 2000);
-        //animation
+        //Animation
         playerHand.style.animation = "shakePlayer 2s ease";
         computerHand.style.animation = "shakeComputer 2s ease";
       });
@@ -56,14 +56,14 @@ const game = () => {
   };
 
   const compareHands = (playerChoice, computerChoice) => {
-    //update text
+    //Update Text
     const winner = document.querySelector(".winner");
-    //check tie
+    //Checking for a tie
     if (playerChoice === computerChoice) {
       winner.textContent = "It is a tie";
       return;
     }
-    //check rock
+    //Check for Rock
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
         winner.textContent = "Player Wins";
@@ -77,7 +77,7 @@ const game = () => {
         return;
       }
     }
-    //check paper
+    //Check for Paper
     if (playerChoice === "paper") {
       if (computerChoice === "scissors") {
         winner.textContent = "Computer Wins";
@@ -91,7 +91,7 @@ const game = () => {
         return;
       }
     }
-    //check scissors
+    //Check for Scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
         winner.textContent = "Computer Wins";
@@ -107,14 +107,10 @@ const game = () => {
     }
   };
 
-  //call the inner function
+  //Is call all the inner function
   startGame();
   playMatch();
 };
 
-//start game function
+//start the game function
 game();
-
-document.getElementById("homeButton").addEventListener("click", function () {
-  window.location.href = "index.html";
-});
