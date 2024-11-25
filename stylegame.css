@@ -6,12 +6,12 @@
 
 section {
     height: 100vh;
-    background-color: rgb(75, 152, 150);
+    background-color: rgb(39, 41, 68);
     font-family: sans-serif;
 }
 
 .score {
-    color: rgb(112, 74, 60);
+    color: rgb(224, 224, 224);
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -29,7 +29,7 @@ section {
 }
 
 .intro {
-    color: rgb(112, 74, 60);
+    color: rgb(224, 224, 224);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -48,17 +48,11 @@ section {
     height: 50px;
     background: none;
     border: none;
-    color: rgb(112, 74, 60);
+    color: rgb(224, 224, 224);
     font-size: 20px;
-    background: burlywood;
+    background: rgb(45, 117, 96);
     border-radius: 3px;
     cursor: pointer;
-}
-
-button {
-    background: burlywood;
-    color: rgb(112, 74, 60);
-    font-size: 20px;
 }
 
 .match {
@@ -70,7 +64,7 @@ button {
 }
 
 .winner {
-    color: rgb(112, 74, 60);
+    color: rgb(224, 224, 224);
     text-align: center;
     font-size: 50px;
 }
