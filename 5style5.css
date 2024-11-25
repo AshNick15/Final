@@ -6,11 +6,17 @@
 
 body {
     display: flex;
-    background-color: chocolate;
+    background-color: rgb(0, 77, 88);
     flex-direction: column;
     justify-content: flex-end;
     height: 100vh;
     margin: 0;
+}
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+    color: #04a3a3;
 }
 
 button {
@@ -27,7 +33,7 @@ button {
 }
 
 button:hover {
-    background-color: #036363;
+    background-color: #00ffff;
 }
 
 .memory-game {
