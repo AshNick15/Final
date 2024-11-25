@@ -6,7 +6,7 @@
 
 section {
     height: 100vh;
-    background-color: rgb(39, 41, 68);
+    background-color: rgb(0, 67, 60);
     font-family: sans-serif;
 }
 
@@ -50,7 +50,7 @@ section {
     border: none;
     color: rgb(224, 224, 224);
     font-size: 20px;
-    background: rgb(45, 117, 96);
+    background: rgb(159, 156, 80);
     border-radius: 3px;
     cursor: pointer;
 }
