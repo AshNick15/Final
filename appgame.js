@@ -114,3 +114,7 @@ const game = () => {
 
 //start the game function
 game();
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
