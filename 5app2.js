@@ -28,3 +28,7 @@ function addExpense() {
   document.getElementById("amount").value = "";
   document.getElementById("description").value = "";
 }
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
