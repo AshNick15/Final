@@ -55,6 +55,12 @@ section {
     cursor: pointer;
 }
 
+button {
+    background: burlywood;
+    color: rgb(112, 74, 60);
+    font-size: 20px;
+}
+
 .match {
     position: absolute;
     top: 50%;
