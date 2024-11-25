@@ -32,3 +32,7 @@ let details = data.map(function (item) {
 });
 
 info.innerHTML = details.join("\n");
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
