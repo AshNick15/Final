@@ -22,3 +22,7 @@ function addNote() {
   noteList.appendChild(newNote);
   noteInput.value = ""; // Clear input field
 }
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
