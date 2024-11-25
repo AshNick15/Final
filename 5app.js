@@ -36,3 +36,7 @@ function addTask() {
   document.getElementById("taskList").appendChild(li);
   taskInput.value = "";
 }
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
