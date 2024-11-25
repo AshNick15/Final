@@ -11,3 +11,7 @@ function countVowels() {
 
   document.getElementById("result").textContent = `Number of vowels: ${count}`;
 }
+
+document.getElementById("homeButton").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
