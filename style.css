@@ -1,9 +1,29 @@
 body {
     background-color: #a25e8b;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin: 0;
     padding: 20px;
+}
+
+.bubbly-text {
+    font-size: 48px;
+    color: #ff69b4;
+    text-shadow:
+        0 0 10px rgba(255, 105, 180, 0.5),
+        0 0 20px rgba(255, 105, 180, 0.5),
+        0 0 30px rgba(255, 105, 180, 0.5);
+    animation: pop 0.5s infinite alternate;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .container {
