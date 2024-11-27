@@ -35,13 +35,13 @@ const game = () => {
         const computerChoice = computerOptions[computerNumber];
 
         setTimeout(() => {
-          //Here is where we call compare hands
+          //compare hands
           compareHands(this.textContent, computerChoice);
-          //Update Images
-          playerHand.src = `./assets/${this.textContent}.png`;
-          computerHand.src = `./assets/${computerChoice}.png`;
+          //update images
+          playerHand.src = `./gameimages/${this.textContent}.png`;
+          computerHand.src = `./gameimages/${computerChoice}.png`;
         }, 2000);
-        //Animation
+        //animation
         playerHand.style.animation = "shakePlayer 2s ease";
         computerHand.style.animation = "shakeComputer 2s ease";
       });
@@ -56,14 +56,14 @@ const game = () => {
   };
 
   const compareHands = (playerChoice, computerChoice) => {
-    //Update Text
+    //update text
     const winner = document.querySelector(".winner");
-    //Checking for a tie
+    //check tie
     if (playerChoice === computerChoice) {
       winner.textContent = "It is a tie";
       return;
     }
-    //Check for Rock
+    //check rock
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
         winner.textContent = "Player Wins";
@@ -77,7 +77,7 @@ const game = () => {
         return;
       }
     }
-    //Check for Paper
+    //check paper
     if (playerChoice === "paper") {
       if (computerChoice === "scissors") {
         winner.textContent = "Computer Wins";
@@ -91,7 +91,7 @@ const game = () => {
         return;
       }
     }
-    //Check for Scissors
+    //check scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
         winner.textContent = "Computer Wins";
@@ -107,12 +107,12 @@ const game = () => {
     }
   };
 
-  //Is call all the inner function
+  //call the inner function
   startGame();
   playMatch();
 };
 
-//start the game function
+//start game function
 game();
 
 document.getElementById("homeButton").addEventListener("click", function () {
